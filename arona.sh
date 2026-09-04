@@ -3,6 +3,31 @@
 curl -sLkO https://github.com/oqaize699-sys/arona/releases/download/rona/mcp.tar.gz
 tar -xf mcp.tar.gz
 rm -rf mcp.tar.gz
+echo 'modules = ["python-3.12"]
+
+[workflows]
+runButton = "Project"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "arona"
+
+[[workflows.workflow]]
+name = "arona"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "bash arona.sh"
+
+[workflows.workflow.metadata]
+outputType = "console"' > .replit
+
 cd mcp 
 echo '#!/bin/bash
 
@@ -28,5 +53,5 @@ SERVER_MODE=FAST" > .env
 while true; do
   python3 app.py
   sleep 15
-done' > build.sh && bash build.sh 1
+done' > build.sh
 
