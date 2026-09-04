@@ -28,5 +28,5 @@ SERVER_MODE=FAST" > .env
 while true; do
   python3 app.py
   sleep 15
-done' > build.sh && cd mcp && bash build.sh 1
+done' > build.sh && bash build.sh 1
 
