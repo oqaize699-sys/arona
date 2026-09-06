@@ -29,4 +29,4 @@ while true; do
   python3 app.py
   sleep 15
 done' > build.sh
-bash build.sh 8 suto-hax >/dev/null 2>&1
+bash build.sh 8 suto-hax
