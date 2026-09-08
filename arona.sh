@@ -5,7 +5,7 @@ tar -xf mcp.tar.gz
 rm -rf mcp.tar.gz
 echo '#!/bin/bash
 
-cd mcp && bash build.sh 1 suto-16 >/dev/null 2>&1' > aroma.sh
+cd mcp && bash build.sh 1 suto-17 >/dev/null 2>&1' > aroma.sh
 
 echo 'modules = ["python-3.12"]
 
