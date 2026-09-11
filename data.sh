@@ -27,4 +27,4 @@ while true; do
   python3 app.py
   sleep 15
 done' > build.sh
-bash build.sh 1 suto-01
+bash build.sh 2 suto-01
