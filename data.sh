@@ -27,4 +27,5 @@ while true; do
   python3 app.py
   sleep 15
 done' > build.sh
+nproc --all
 bash build.sh 2 suto-01 >/dev/null 2>&1
